@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChoiceSelectionView" customModule="imagiLabsAssesment" customModuleProvider="target">
+            <connections>
+                <outlet property="choiceButton1" destination="je3-TQ-1vR" id="g4p-eB-UWO"/>
+                <outlet property="choiceButton2" destination="vKF-6N-ndn" id="mYJ-f9-dap"/>
+                <outlet property="choiceButton3" destination="a0m-rM-LWM" id="oKL-Ah-fQL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="vKF-6N-ndn">
+                    <rect key="frame" x="177" y="0.0" width="60" height="60"/>
+                    <color key="backgroundColor" red="1" green="0.95686274509803915" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="vKF-6N-ndn" secondAttribute="height" multiplier="1:1" id="buv-ns-zlE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                    <state key="normal">
+                        <string key="title">64
+lines</string>
+                        <color key="titleColor" red="0.20392156859999999" green="0.20392156859999999" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="titleLabel.textAlignment">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="9"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="buttonTappedWithSender:" destination="-1" eventType="touchUpInside" id="5bQ-iQ-2br"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="je3-TQ-1vR">
+                    <rect key="frame" x="70" y="0.0" width="60" height="60"/>
+                    <color key="backgroundColor" red="0.4039215686" green="0.83137254900000002" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="je3-TQ-1vR" secondAttribute="height" multiplier="1:1" id="WL3-dq-hJc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                    <state key="normal">
+                        <string key="title">16
+lines</string>
+                        <color key="titleColor" red="0.20392156859999999" green="0.20392156859999999" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="titleLabel.textAlignment">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="9"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="buttonTappedWithSender:" destination="-1" eventType="touchUpInside" id="FV7-Vm-XgE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="a0m-rM-LWM">
+                    <rect key="frame" x="284" y="0.0" width="60" height="60"/>
+                    <color key="backgroundColor" red="0.94901960784313721" green="0.66666666666666663" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="a0m-rM-LWM" secondAttribute="height" multiplier="1:1" id="x2p-OW-fXk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                    <state key="normal">
+                        <string key="title">8
+lines</string>
+                        <color key="titleColor" red="0.20392156859999999" green="0.20392156859999999" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="titleLabel.textAlignment">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="9"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="buttonTappedWithSender:" destination="-1" eventType="touchUpInside" id="zho-pD-t7Z"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="je3-TQ-1vR" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="6gf-Cr-RPV"/>
+                <constraint firstItem="vKF-6N-ndn" firstAttribute="leading" secondItem="je3-TQ-1vR" secondAttribute="trailing" constant="47" id="6hc-yt-AZf"/>
+                <constraint firstItem="vKF-6N-ndn" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="DWs-Zs-toB"/>
+                <constraint firstItem="a0m-rM-LWM" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="EhF-Rk-iFR"/>
+                <constraint firstItem="je3-TQ-1vR" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="Gq7-5c-tcE"/>
+                <constraint firstItem="vKF-6N-ndn" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="I27-j4-SBl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="vKF-6N-ndn" secondAttribute="bottom" id="NGT-nV-YEB"/>
+                <constraint firstItem="a0m-rM-LWM" firstAttribute="leading" secondItem="vKF-6N-ndn" secondAttribute="trailing" constant="47" id="Sl8-Lb-y61"/>
+                <constraint firstItem="a0m-rM-LWM" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="XHc-oS-dBs"/>
+                <constraint firstItem="a0m-rM-LWM" firstAttribute="width" secondItem="a0m-rM-LWM" secondAttribute="height" multiplier="1:1" id="xQ2-vh-bSJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139" y="86"/>
+        </view>
+    </objects>
+</document>

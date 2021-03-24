@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IDEView" customModule="imagiLabsAssesment" customModuleProvider="target">
+            <connections>
+                <outlet property="codeTextView" destination="N0Z-yH-dUm" id="Bxm-dL-ggj"/>
+                <outlet property="debugButton" destination="7xv-Jb-OVV" id="ELa-JK-if2"/>
+                <outlet property="indexTextView" destination="Eaa-Pk-umd" id="d6x-GO-8jO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Eaa-Pk-umd">
+                    <rect key="frame" x="0.0" y="0.0" width="23" height="400"/>
+                    <color key="backgroundColor" red="0.33725490196078434" green="0.33725490196078434" blue="0.33725490196078434" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="23" id="LYC-2m-wfb"/>
+                    </constraints>
+                    <string key="text">1
+2</string>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="18"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </textView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="N0Z-yH-dUm">
+                    <rect key="frame" x="21" y="0.0" width="354" height="400"/>
+                    <color key="backgroundColor" red="0.25490196078431371" green="0.25490196078431371" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <string key="text">for pixel in range(0,4):
+	m[pixel][0]=red</string>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="18"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7xv-Jb-OVV">
+                    <rect key="frame" x="305" y="323" width="52" height="52"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="Ye9-8S-cY4"/>
+                        <constraint firstAttribute="width" constant="52" id="o65-a1-rWP"/>
+                    </constraints>
+                    <state key="normal" image="debug"/>
+                    <connections>
+                        <action selector="debugButtonTapped" destination="-1" eventType="touchUpInside" id="fpv-Tz-F4f"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="7xv-Jb-OVV" secondAttribute="bottom" constant="25" id="2Sq-yE-hkA"/>
+                <constraint firstItem="N0Z-yH-dUm" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="9nk-1D-S6h"/>
+                <constraint firstItem="Eaa-Pk-umd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="CQd-Bj-6He"/>
+                <constraint firstItem="N0Z-yH-dUm" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="DJe-uv-RRe"/>
+                <constraint firstItem="N0Z-yH-dUm" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Esa-Mf-cOm"/>
+                <constraint firstItem="Eaa-Pk-umd" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="Kj2-i0-sub"/>
+                <constraint firstItem="N0Z-yH-dUm" firstAttribute="leading" secondItem="Eaa-Pk-umd" secondAttribute="trailing" constant="-2" id="Xtx-wM-25F"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="7xv-Jb-OVV" secondAttribute="trailing" constant="18" id="ent-61-MVd"/>
+                <constraint firstItem="Eaa-Pk-umd" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="fbf-M7-RVw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="138.40000000000001" y="120.53973013493254"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="debug" width="52.5" height="52"/>
+    </resources>
+</document>
