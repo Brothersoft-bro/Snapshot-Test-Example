@@ -27,7 +27,7 @@ extension TutorialViewModel {
         let choice2 = ChoiceViewModel()
         choice2.title = "64\nlines"
         choice2.color = UIColor.imagiYellow
-        choice2.isCorrect = false
+        choice2.isCorrect = true
         
         let choice3 = ChoiceViewModel()
         choice3.title = "8\nlines"
